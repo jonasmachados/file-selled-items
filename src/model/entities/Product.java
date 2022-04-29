@@ -17,6 +17,13 @@ public class Product {
         this.quantity = quantity;
     }
 
+    double valueTotal = 0;
+
+    public double valueTotal() {
+        double valueTotal = price * quantity;
+        return valueTotal;
+    }
+
     //GET AND SET
     public String getName() {
         return name;
